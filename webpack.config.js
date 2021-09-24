@@ -34,12 +34,12 @@ module.exports = (env) => {
       node: true, // Target node environment (ignore built-in modules like path, fs, etc.)
     },
     resolve: {
-      extensions: ['.ts', '.js'],
+      extensions: ['.ts', '.tsx', '.js', '.jsx'],
     },
     module: {
       rules: [
         {
-          test: /\.(ts|js)$/,
+          test: /\.(tsx?|jsx?)$/,
           use: 'babel-loader',
           exclude: /node_modules/,
         },

@@ -10,6 +10,7 @@ module.exports = {
         shippedProposals: true,
       }
     ],
+    "@babel/preset-react",
     "@babel/preset-typescript"
   ],
   plugins: [
