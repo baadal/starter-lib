@@ -3,6 +3,7 @@
 rm -rf dist
 webpack &
 webpack --env ESM &
+tsc --project tsconfig.types.json --emitDeclarationOnly --outDir dist/types &
 wait
 source tasks/fixup.sh
 
