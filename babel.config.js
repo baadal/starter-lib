@@ -12,6 +12,7 @@ module.exports = {
         // modules: false, // preserve ES modules [default `auto`]
       }
     ],
+    "@babel/preset-react",
     "@babel/preset-typescript"
   ],
   plugins: [
