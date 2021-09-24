@@ -3,6 +3,7 @@
 rm -rf dist
 cross-env NODE_ENV=production webpack &
 cross-env NODE_ENV=production webpack --env ESM &
+tsc --project tsconfig.types.json --emitDeclarationOnly --outDir dist/types &
 wait
 source tasks/fixup.sh
 
