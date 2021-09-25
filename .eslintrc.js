@@ -26,6 +26,9 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:react/recommended", // Uses the recommended rules from eslint-plugin-react
+    "airbnb", // Uses the recommended rules from eslint-config-airbnb
+    "airbnb-typescript", // Uses the recommended rules from eslint-config-airbnb-typescript
+    "airbnb/hooks",
     "plugin:@typescript-eslint/recommended", // Uses the recommended rules from @typescript-eslint/eslint-plugin
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "prettier", // Uses eslint-config-prettier to disable ESLint rules that would conflict with prettier
